@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetAI - Smart Money Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2 class="logo">Budget<span>AI</span></h2>
+        <button class="nav-btn">Get Started</button>
+    </nav>
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-text">
+        <h1>
+            Take Control of Your Money
+            with <span>AI</span>
+        </h1>
+
+        <p>
+            Analyze your spending, create smarter budgets,
+            and reach your financial goals with personalized AI guidance.
+        </p>
+
+        <a href="#planner" class="main-btn">
+            Start Planning
+        </a>
+    </div>
+
+
+    <div class="hero-card">
+
+        <h3>AI Financial Coach</h3>
+
+        <div class="mini-box">
+            💰 Income Tracking
+        </div>
+
+        <div class="mini-box">
+            📊 Spending Analysis
+        </div>
+
+        <div class="mini-box">
+            🎯 Goal Planning
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section id="planner" class="planner">
+
+<h2>Create Your Budget</h2>
+
+<div class="form-grid">
+
+
+<input id="income" type="number" placeholder="Monthly Income">
+
+
+<input id="housing" type="number" placeholder="Housing">
+
+<input id="utilities" type="number" placeholder="Utilities">
+
+<input id="groceries" type="number" placeholder="Groceries">
+
+<input id="transportation" type="number" placeholder="Transportation">
+
+<input id="insurance" type="number" placeholder="Insurance">
+
+<input id="phone" type="number" placeholder="Phone">
+
+<input id="internet" type="number" placeholder="Internet">
+
+<input id="entertainment" type="number" placeholder="Entertainment">
+
+<input id="subscriptions" type="number" placeholder="Subscriptions">
+
+<input id="debt" type="number" placeholder="Debt Payments">
+
+<input id="other" type="number" placeholder="Other Expenses">
+
+
+<input id="goal" type="text" placeholder="Savings Goal">
+
+<input id="target" type="number" placeholder="Target Amount">
+
+
+<textarea id="notes" placeholder="Additional Notes"></textarea>
+
+
+</div>
+
+
+<div class="summary">
+
+<div>
+<h3>Total Expenses</h3>
+<p id="expenses">$0</p>
+</div>
+
+
+<div>
+<h3>Remaining</h3>
+<p id="remaining">$0</p>
+</div>
+
+
+<div>
+<h3>Savings Rate</h3>
+<p id="rate">0%</p>
+</div>
+
+
+</div>
+
+
+<button onclick="analyzeBudget()" class="analyze">
+Analyze With AI
+</button>
+
+
+</section>
+
+
+
+<section class="result">
+
+<h2>AI Budget Report</h2>
+
+<div id="aiResult">
+
+Your personalized AI analysis will appear here.
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<p>
+© 2026 BudgetAI | Smart Financial Planning
+</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
