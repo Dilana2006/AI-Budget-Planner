@@ -1,3 +1,9 @@
+async function analyzeBudget() {
+  console.log("Button clicked!");
+
+  const result = document.getElementById("aiResult");
+}
+
 const fields = [
   "income","housing","utilities","groceries","transportation","insurance",
   "phone","internet","entertainment","subscriptions","debt","other"
@@ -57,6 +63,7 @@ async function analyzeBudget() {
     });
 
     const data = await res.json();
+    console.log(data);
 
     if (!res.ok || data.error) {
       result.innerHTML = `<h3>⚠️ Please check your input</h3><p>${data.message || "Something went wrong."}</p>`;
